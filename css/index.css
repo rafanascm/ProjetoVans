@@ -1,0 +1,197 @@
+:root {
+  --cor-de-fundo: #EBECEE;
+  --preto: #000000;
+  --branco: #ffffff;
+  --titulo-delatlhe: #D11317;
+  --detalhes: #B92F35;
+  --cor-fonte-principal: #747880;
+  --font-principal: "Poppins";
+  --font-titulo: "Francois One";
+  --fonte-subtitulo: "Bebas Neue"
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body{
+  background: var(--cor-de-fundo);
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-columns: 1fr 120px
+  minmax(300px,800px) 1fr;
+}
+
+.menu{
+  grid-column: 3/5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--branco);
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--preto);
+  font-family: var(--fonte-subtitulo);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .1em;
+}
+
+.grid-section{
+  grid-column: 2 / 4 ;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  grid-gap: 20px;
+  margin-bottom: 4rem;
+}
+
+.titulo{
+  font-family: var(--font-titulo);
+  text-transform: uppercase;
+  font-size: 6rem;
+  line-height: 1;
+  grid-column: 1 / 4;
+  /* width:10ch; */
+}
+
+.titulo-Vans{
+  color: var( --titulo-delatlhe);
+}
+
+.tenis h2{
+  font-family: var(--fonte-subtitulo);
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+  color: var(--preto);
+}
+
+.tenis h2::before{
+  content: "";
+  background: var(--detalhes);
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.tenis p {
+  font-family: var(--font-principal);
+  color: var(--cor-fonte-principal);
+  font-weight: 300;
+  line-height: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tenis-lista{
+  height: 370px;
+  overflow-y: scroll;
+  grid-column: 2;
+}
+
+.tenis-lista::-webkit-scrollbar{
+  width: 16px;
+}
+
+.tenis-lista::-webkit-scrollbar-thumb{
+  background: var(--detalhes);
+  border-left: 4px solid var(--cor-de-fundo);
+  border-right: 4px solid var(--cor-de-fundo);
+}
+
+.tenis-lista::-webkit-scrollbar-track{
+  background: var(--cor-de-fundo);
+}
+
+.tenis-descricao {
+  grid-column: 3;
+}
+
+.tenis-descricao section {
+  margin-bottom: 3rem;
+}
+
+.faq-lista{
+  grid-column: 2/4;
+}
+
+.faq-lista dt{
+  font-family: var(--fonte-subtitulo);
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color: var(--preto);
+}
+
+.faq-lista dt::before{
+  content: "";
+  background: var(--detalhes);
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.faq-lista dd{
+  font-family: var(--font-principal);
+  font-weight: 300;
+  margin-bottom: .5rem;
+  margin-left: 30px;
+}
+
+.mapa{
+  grid-column: 2;
+}
+
+.dados{
+  grid-column: 3;
+}
+
+.dados li{
+  margin-bottom: 1rem;
+  font-family: var(--font-principal);
+  font-weight: 300;
+}
+
+.dados li::before {
+    content: "";
+    background: var(--detalhes);
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.copy  {
+grid-column: 3/5;
+margin-bottom: 2rem;
+background-color: var(--branco);
+}
+
+.copy p {
+  padding: 20px;
+  font-family: var(--fonte-subtitulo);
+  font-weight: bold;
+}
+
